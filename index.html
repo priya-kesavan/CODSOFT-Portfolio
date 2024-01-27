@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    
+
+    <title>Responsive Portfilo website</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        background-image: url("dha.jpg");
+        background-size: cover;
+        position: center;
+        display: flex;
+        flex-direction: column ;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="toggle">
+        <a href="#">
+          <ion-icon name="menu-outline"></ion-icon>
+        </a>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="section1">
+          <div class="head-img">
+            <img
+              src="priya.jpg"
+              alt=""
+            />
+          </div>
+          <div class="img-article">
+            <h1>Hi, I am Priyadharsini A</h1>
+            <h2>Electronics and communication Engineering</h2>
+            <hr>
+            <p class="about">
+              I am currently pursuing my studies in Electronics and Communication Engineering at Karpagam College of Engineering, located in Coimbatore. I reside in Coimbatore, a city that I find both vibrant and inspiring. My academic focus has provided me with a strong foundation in various aspects of electronics and communication technology.
+            </p>
+            <p>
+              Beyond my academic pursuits, I have a keen interest in front-end development. Exploring the creative realm of web design and development has been an exciting journey for me. I find joy in crafting user-friendly interfaces and bringing designs to life through coding.One of my key strengths is my ability to learn quickly. I am adaptive by nature, allowing me to grasp new concepts efficiently and apply them effectively.
+            </p>
+            <p>
+             This adaptability has been particularly beneficial in the fast-paced field of technology, enabling me to stay updated with the latest trends and tools in front-end development.I am passionate about combining my engineering background with my interest in front-end development to create innovative and impactful solutions. I aspire to contribute my skills and knowledge to build intuitive and user-centric digital experiences.
+            </p>
+            <a href="pri.jpg" class="down"><button>Download Resume</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header>
+      <div class="container">
+        <div class="section2">
+          <div class="head-img">
+          </div>
+          <div class="img-article"></div>
+            <p class="Education">
+              <h1>EDUCATION:</h1>
+             <hr>
+                <h1>Educational Qualifications</h1>
+                 <h2>BACHELOR OF ENGINEERING</h2>
+              <h3>Karpagam College Of Engineering</h3>
+              
+                  <h4>2021-2025</h4>
+              
+                 <h3>HIGHER SECONDARY EDUCATION</h3>
+                <h4>Vidhya Parthi Higher Secondary School</h4>
+              
+              <h4>2020-2021</h4>
+              
+              <h4>HSC Percentage : 90.5</h4>
+              
+              <h3>SECONDARY SCHOOL EDUCATION</h3>
+               <h4>St.Britto's high School</h4>
+              
+              <h4>2018- 2019</h4>
+              <h4>SSLC Percentage : 87.4</h4>
+           
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header>
+      <div class="container">
+        <div class="section3">
+          <div class="img-article">
+            <p class="Skills"> 
+              <h1>SKILLS</h1>
+              <hr>
+             <h1>Soft skills</h1>
+             <ul>
+             <li>Time Management</li>
+              <li>Problem Solving</li>
+              <li>Listening Skills</li>
+              <li>Self Motivation</li>
+            </ul>
+            <h1>Technical Skills</h1>
+            <ul>
+              <li>C Programming</li>
+              <li>Java Programming</li>
+              <li>Html (basic)</li>
+              <li>Data base Management system</li>
+            </ul>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <hr>
+      <div class="contact-box">
+          <div class="contact-info">
+              <h2>Contact Information</h2>
+              <p>Email: example@example.com</p>
+              <p>Phone: 123-456-7890</p>
+              <p>Address: 123 Main Street, City, Country</p>
+          </div>
+          <div class="contact-form">
+              <h2>Send a Message</h2>
+              <form action="#">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  <br>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <br>
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                  <br>
+                  <button type="submit">Send</button>
+                  <br>
+              </form>
+          </div>
+      </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".nav-links").hasClass("active")) {
+            $(".nav-links").removeClass("active");
+            $(this).find("a").html('<ion-icon name="menu-outline"></ion-icon>');
+          } else {
+            $(".nav-links").addClass("active");
+            $(this)
+              .find("a")
+              .html('<ion-icon name="close-outline"></ion-icon>');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
